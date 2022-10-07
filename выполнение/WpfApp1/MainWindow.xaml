@@ -9,8 +9,11 @@
     <Grid>
         <Button x:Name="GL" Content="Гласные" Margin="570,30,68,337" Click="GL_Click"/>
         <Button x:Name="SG" Content="Согласные" Margin="570,148,68,217" RenderTransformOrigin="0.542,0.488" Click="SG_Click"/>
-        <TextBox x:Name="TX" Text="Введите текст" TextWrapping="Wrap" Margin="60,30,285,217" RenderTransformOrigin="0.514,0.604" TextChanged="TX_TextChanged"/>
-        <TextBox x:Name="VV" Text="TextBox" TextWrapping="Wrap" Width="120" Margin="324,248,356,77"/>
+        <TextBox x:Name="TX" TextWrapping="Wrap" Margin="60,30,285,217" RenderTransformOrigin="0.514,0.604" TextChanged="TX_TextChanged"/>
+        <TextBox x:Name="VVsogl" Text="TextBox" TextWrapping="Wrap" Width="120" Margin="210,259,470,66" TextChanged="VVsogl_TextChanged"/>
+        <TextBox x:Name="VVgl" Text="TextBox" TextWrapping="Wrap" Width="120" Margin="395,259,285,66" TextChanged="VVgl_TextChanged"/>
+        <Label Content="гласные" Margin="415,222,305,190"/>
+        <Label Content="согласные" Margin="240,222,500,189"/>
 
     </Grid>
 </Window>

@@ -29,20 +29,40 @@ namespace WpfApp1
         private void GL_Click(object sender, RoutedEventArgs e)
         {
             string A = TX.Text;
-            int n = Regex.Matches(A, @"[УуЕеыАаОоЭэЯяИиЁёЮю]", RegexOptions.IgnoreCase).Count;
-            VV.Text = n.ToString();
+            int n1 = Regex.Matches(A, @"[УуЕеыАаОоЭэЯяИиЁёЮю]", RegexOptions.IgnoreCase).Count;
+            VVsogl.Text = n1.ToString();
         }
 
         private void SG_Click(object sender, RoutedEventArgs e)
         {
             string A = TX.Text;
-            int n = Regex.Matches(A, @"[ЦцКкНнГгШшЩщЗзХхФфВвПпРрЛлДдЖжЧчСсМмТтБб]", RegexOptions.IgnoreCase).Count;
-            VV.Text = n.ToString();
+            int n2 = Regex.Matches(A, @"[ЦцКкНнГгШшЩщЗзХхФфВвПпРрЛлДдЖжЧчСсМмТтБб]", RegexOptions.IgnoreCase).Count;
+            VVgl.Text = n2.ToString();
         }
 
         private void TX_TextChanged(object sender, TextChangedEventArgs e)
         {
+            string A = TX.Text;
+            int n2 = Regex.Matches(A, @"[ЦцКкНнГгШшЩщЗзХхФфВвПпРрЛлДдЖжЧчСсМмТтБб]", RegexOptions.IgnoreCase).Count;
+            VVsogl.Text = n2.ToString();
+            int n1 = Regex.Matches(A, @"[УуЕеыАаОоЭэЯяИиЁёЮю]", RegexOptions.IgnoreCase).Count;
+            VVgl.Text = n1.ToString();
+        }
 
+        private void VVsogl_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+               /* string A = TX.Text;
+                int n2 = Regex.Matches(A, @"[ЦцКкНнГгШшЩщЗзХхФфВвПпРрЛлДдЖжЧчСсМмТтБб]", RegexOptions.IgnoreCase).Count;
+                VVsogl.Text = n2.ToString();*/
+            
+        }
+
+        private void VVgl_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            /*string A = TX.Text;
+            int n1 = Regex.Matches(A, @"[УуЕеыАаОоЭэЯяИиЁёЮю]", RegexOptions.IgnoreCase).Count;
+            VVgl.Text = n1.ToString();*/
         }
     }
 }
